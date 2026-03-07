@@ -1,0 +1,2 @@
+alias pup='export https_proxy=http://127.0.0.1:8118 http_proxy=http://127.0.0.1:8118 all_proxy=socks5://127.0.0.1:8118'
+alias pdown='export https_proxy= http_proxy= all_proxy='
