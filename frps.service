@@ -1,0 +1,12 @@
+[Unit]
+Description=FRP Client Service
+After=network.target
+
+[Service]
+Type=simple
+User=dhy
+ExecStart=/home/dhy/work/frp_0.68.0_linux_amd64/frps -c /home/dhy/work/frp_0.68.0_linux_amd64/frps.toml
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
