@@ -1,0 +1,14 @@
+[Unit]
+Description=FRP Client Service
+After=graphical-session.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStartPre=/bin/sleep 10
+ExecStart=/home/dhy/work/GitHub/frp_0.67.0_linux_amd64/frpc -c /home/dhy/work/GitHub/frp_0.67.0_linux_amd64/frpc.toml
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
