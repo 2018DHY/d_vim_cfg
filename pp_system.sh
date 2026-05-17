@@ -1,6 +1,6 @@
 sudo apt update
 sudo apt upgrade -y
-sudo apt install build-essential -y
+sudo apt install build-essential gdb -y
 sudo apt install git vim cmake ssh privoxy -y
 sudo apt install shadowsocks-libev -y
 #for qt
