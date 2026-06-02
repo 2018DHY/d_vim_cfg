@@ -7,7 +7,7 @@ Type=simple
 User=root
 Group=root
 ExecStartPre=/bin/sleep 10
-ExecStart=/home/dhy/work/GitHub/frp_0.67.0_linux_amd64/frpc -c /home/dhy/work/GitHub/frp_0.67.0_linux_amd64/frpc.toml
+ExecStart=/home/dhy/frp/frpc -c /home/dhy/frp/frpc.toml
 Restart=on-failure
 
 [Install]
